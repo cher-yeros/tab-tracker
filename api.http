@@ -1,0 +1,67 @@
+### Register api
+
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "email": "hells@gmail.com",
+    "password": "hdsjflka"
+}
+
+### Login api
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "hello@gmail.com",
+    "password": "password"
+}
+
+### Get all songs
+
+GET http://localhost:5000/songs
+Content-Type: application/json
+
+### Add a song
+
+POST http://localhost:5000/songs/add
+Content-Type: application/json
+
+{
+    "title": "remember",
+    "artist": "Louren Daigle",
+    "album": "look up child",
+    "genre": "gospel",
+    "userId": 1
+    
+}
+
+### Get Single Song
+
+GET http://localhost:5000/songs/105
+Content-Type: application/json
+
+
+### Edit song
+
+PUT http://localhost:5000/songs/edit/1
+Content-Type: application/json
+
+{
+    "title": "remember edited",
+    "artist": "Louren Daigle",
+    "album": "look up child",
+    "genre": "gospel"
+    
+}
+
+### Search song
+
+GET http://localhost:5000/songs?q=stre
+Content-Type: application/json
+
+### Get all lyrics
+
+GET http://localhost:5000/lyrics
+Content-Type: application/json
